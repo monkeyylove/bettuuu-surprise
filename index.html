@@ -280,6 +280,56 @@ button:active{
   }
 }
 
+.pookieFrame{
+
+  width:320px;
+
+  margin:25px auto;
+
+  padding:10px;
+
+  border-radius:32px;
+
+  background:
+  rgba(255,255,255,0.10);
+
+  backdrop-filter:blur(18px);
+
+  border:
+  1px solid rgba(255,255,255,0.25);
+
+  box-shadow:
+  0 10px 35px rgba(255,105,180,0.25),
+  0 0 40px rgba(255,255,255,0.10);
+
+  animation:
+  floatPookie 4s ease-in-out infinite;
+}
+
+.pookieFrame img{
+
+  width:100%;
+
+  border-radius:24px;
+
+  display:block;
+}
+
+@keyframes floatPookie{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-8px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+}
+
 </style>
 </head>
 
@@ -290,6 +340,12 @@ button:active{
 <p id="moodLine">
 currently missing Bettuuu hours 💗
 </p>
+
+<div class="pookieFrame">
+
+  <img src="bettuuu-frame.png" alt="Bettuuu">
+
+</div>
 
 <audio id="bgMusic" loop></audio>
 
